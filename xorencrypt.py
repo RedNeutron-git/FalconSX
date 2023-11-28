@@ -37,13 +37,5 @@ with open("malware.cpp", "w") as file:
     file.write(data)
 
 # compile
-try:
-    # EHsc: exception handling, MT: multi threading, & 02: level optimization
-    cmd = "cl.exe malware.cpp /Fe:malware.exe /EHsc /MT /O2"
-    os.system(cmd)
-except:
-    print ("Error!")
-    sys.exit()
-else:
-    print (cmd)
-    print ("Succeed!")
+cmd = "cl.exe malware.cpp /Fe:malware.exe /EHsc /MT /O2"
+os.system(cmd)
